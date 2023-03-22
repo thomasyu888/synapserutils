@@ -687,6 +687,7 @@ autoGenerateRdFiles <- function(srcRootDir,
         argument = formatArgsResult,
         returned = returned
       )
+      browser()
       # make sure all place holders were replaced
       p <- regexpr("##(title|description|usage|arguments|value|examples)##", content)[1]
       if (p > 0) stop(sprintf("Failed to replace all placeholders in %s.Rd", name))
